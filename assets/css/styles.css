@@ -143,9 +143,13 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 4rem;
+
 }
 
 .scheldule h2{
+  font-size: 2rem;
+  font-weight: 700;
   color: #fff;
 }
 
@@ -166,7 +170,7 @@ ul {
 .scheldule-row-1{
   align-self: flex-end;
 
-  padding-right: 232px;
+  padding-right: 15.5rem;
 }
 
 .scheldule-row-2{
@@ -194,10 +198,8 @@ ul {
 
 .scheldule-row-3{
   align-self: flex-end;
-  padding-right: 166px;
+  padding-right: 11.5rem;
 }
-
-
 
 .time{
   width: 120px;
@@ -262,7 +264,8 @@ ul {
   align-items: center;
   background-color: #fff;
   width: 100%;
-  padding: 10px 40px 10px 10px;
+  /* padding: 10px 40px 10px 10px; */
+  padding: 1rem;
 }
 
 .start span, .lunch span, .closing span{
@@ -288,12 +291,15 @@ ul {
 }
 
 .contain-place{
-  padding-top: 1.25rem;
-  color: #fff;
+  padding-top: 4rem;
 }
 
 .contain-place h2{
+  font-size: 2rem;
+  font-weight: 700;
   text-align: center;
+  color: #fff;
+
 }
 
 .map-place{
@@ -305,7 +311,7 @@ ul {
   margin-bottom: 3.75rem;
 }
 
-.info-contact{
+.cards-contact{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -325,7 +331,7 @@ ul {
   color: black;
 }
 
-.info-contact p{
+.cards-contact p{
   line-height: 1.8;
 }
 
@@ -372,3 +378,22 @@ ul {
 
 /* ############################# */
 
+/* SECTION FOOTER  */
+
+.section-footer{
+  text-align: center;
+}
+
+.organitation{
+  margin: 3rem auto;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+
+  padding: 1.25rem;
+}
+
+.organitation img{
+  width: 9.3rem;
+}
