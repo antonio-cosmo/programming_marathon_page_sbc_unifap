@@ -1,4 +1,8 @@
 /* ======RESET CSS======== */
+:root{
+  font-size: 16px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +11,8 @@
 
 a {
   text-decoration: none;
+
+  font-size: 0.8rem;
 }
 
 html {
@@ -18,14 +24,45 @@ body {
   font-size: 1rem;
 }
 
+
 a {
   text-decoration: none;
 }
-
 ul {
   list-style: none;
 }
+h3{
+  font-weight: 500;
+  line-height: 19px;
 
+  color: #FFFFFF;
+
+  margin-top: 0.5rem;
+}
+h4{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 24px;
+
+  color: #131F2E;
+
+  margin-top: 0.5rem;
+}
+h5{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  
+  color: #385984;
+
+  margin-top: 0.6rem;
+}
+p{
+  font-size: 0.8rem;
+}
 
 .container{
   max-width: 1440px;
@@ -59,7 +96,6 @@ ul {
   z-index: 1;
   position: relative;
   margin: 5rem 5rem 5rem 6rem;
-
 }
 
 .holder::after{
@@ -83,16 +119,23 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 
 .date-and-address{
   width: 100%;
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
   align-items: center;
   gap: 3rem;
   margin: 1.5rem 0;
   font-size: 1rem;
+}
+
+.date-and-address p, .date-and-address a{
+  width: 100%;
+  margin-left: -10%;
 }
 
 .text-purple{
@@ -144,7 +187,6 @@ ul {
   align-items: center;
   justify-content: center;
   margin-top: 4rem;
-
 }
 
 .scheldule h2{
@@ -299,7 +341,6 @@ ul {
   font-weight: 700;
   text-align: center;
   color: #fff;
-
 }
 
 .map-place{
@@ -331,6 +372,12 @@ ul {
   color: black;
 }
 
+.sub-address{
+  display: flex;
+  flex-direction: row;
+  gap: 0.6rem;
+}
+
 .cards-contact p{
   line-height: 1.8;
 }
@@ -354,7 +401,7 @@ ul {
 
 
 .sponsorship{
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(4, 1fr);
   gap: 0.75rem;
   justify-content:center;
@@ -362,13 +409,6 @@ ul {
 
   margin-top: 3.75rem;
   padding-bottom: 1.5rem;
-}
-
-.grid-item{
-  width: 9.5rem;
-  height: 9.5rem;
-  background-color: #FAFCFF;
-
 }
 
 .shape-fill {
@@ -384,7 +424,7 @@ ul {
   text-align: center;
 }
 
-.organitation{
+.footer-img{
   margin: 3rem auto;
   display: inline-flex;
   justify-content: space-between;
@@ -392,8 +432,11 @@ ul {
   gap: 3rem;
 
   padding: 1.25rem;
+
+  min-width: 980px;
+  width: 80%;
 }
 
-.organitation img{
+.organization .footer-img img{
   width: 9.3rem;
 }
