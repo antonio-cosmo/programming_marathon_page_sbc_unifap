@@ -30,6 +30,8 @@ ul {
 .container{
   max-width: 1440px;
   margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 /* HEADER */
@@ -45,7 +47,7 @@ ul {
 }
 
 .logoFap{
-  padding:1rem;
+  padding:1rem 1rem;
 }
 
 .holder{
@@ -108,4 +110,168 @@ ul {
   font-size: 1rem;
   text-align: center;
   margin: 1.5rem 0;
+}
+
+/* ######################## */
+
+
+/* SEÇAO TIMELINE */
+
+.section-timeline{
+  min-height: 100vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg, #385984 70%,#385984 20% );
+}
+
+.steps{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-top: 1.8rem;
+  gap: 3rem;
+}
+
+.steps li {
+  text-align: center;
+  color: #fff;
+}
+
+.steps li p {
+  padding: 1.5rem 0;
+}
+
+.scheldule{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.scheldule h2{
+  color: #fff;
+}
+
+.scheldule-items{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3.5rem;
+}
+
+.contain{
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.scheldule-row-1{
+  align-self: flex-end;
+
+  padding-right: 232px;
+}
+
+.scheldule-row-2{
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.scheldule-row-2 .divider{
+  height: 500px;
+  width: 1px;
+  background-color: #FAFCFF;
+  margin: 0 30px;
+}
+
+.scheldule-row-2 .col-1, .scheldule-row-2 .col-2{
+  width: 440px;
+}
+
+.scheldule-row-2 .col-1{
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.scheldule-row-3{
+  align-self: flex-end;
+  padding-right: 166px;
+}
+
+
+
+.time{
+  width: 120px;
+  height: 120px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+
+}
+
+.hour-09, .hour-10, .hour-12, .hour-14, .hour-20{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hour-09{
+  background-image: url('../img/times/time_9.svg');
+}
+.hour-10{
+  background-image: url('../img/times/time_10.svg');
+}
+.hour-12{
+  background-image: url('../img/times/time_12.svg');
+}
+.hour-14{
+  background-image: url('../img/times/time_14.svg');
+}
+.hour-20{
+  background-image: url('../img/times/time_20.svg');
+}
+
+.start, .warm-up, .competition, .lunch, .closing{
+  display: flex;
+  align-items: stretch;
+}
+
+.start img, .lunch img, .closing img, .warm-up img, .competition img{
+  background: #7E57C2;
+ 
+  padding: 10px;
+}
+
+.start img, .lunch img, .closing img{
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.warm-up img, .competition img{
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+ 
+}
+
+.start span, .lunch span, .closing span, .warm-up span, .competition span{
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  width: 100%;
+  padding: 10px 40px 10px 10px;
+}
+
+.start span, .lunch span, .closing span{
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.warm-up span, .competition span{
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+ 
 }
