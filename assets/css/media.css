@@ -1,10 +1,23 @@
 
 @media (max-width: 1080px){
   html{
-
     font-size: 93.75%;
   }
+  .organitation{
+    margin: 3rem auto;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+
+    min-width: 980px;
+    width: 100%;
 }
+.footer-img{
+
+}
+}
+
+
 @media (max-width: 720px){
   html{
     font-size: 87.5%;
