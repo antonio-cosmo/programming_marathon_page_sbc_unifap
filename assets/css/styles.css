@@ -157,7 +157,7 @@ ul {
   margin-top: 3.5rem;
 }
 
-.contain{
+.contain-time{
   display: flex;
   align-items: center;
   gap: 1.8rem;
@@ -275,3 +275,100 @@ ul {
   border-top-left-radius: 5px;
  
 }
+
+
+/* ############################## */
+
+
+/* SECTION PLACE */
+
+.section-place{
+  min-height: 100vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg, #385984 5%, #7E57C2 99.58%);
+}
+
+.contain-place{
+  padding-top: 1.25rem;
+  color: #fff;
+}
+
+.contain-place h2{
+  text-align: center;
+}
+
+.map-place{
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 3.75rem;
+  margin-bottom: 3.75rem;
+}
+
+.info-contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.address, .contact{
+  border: 1px solid black;
+  padding: 1.5rem 3rem 1.5rem 1.5rem;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  background-color: #fff;
+  color: black;
+}
+
+.info-contact p{
+  line-height: 1.8;
+}
+
+/* mapa */
+
+.mapouter{
+  position:relative;
+  text-align:right;
+  height:500px;
+  width: 500px;
+}
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  height:500px;
+  width:500px;
+  border-radius: 0.5rem;
+
+}
+
+
+.sponsorship{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+  justify-content:center;
+  justify-items: center;
+
+  margin-top: 3.75rem;
+  padding-bottom: 1.5rem;
+}
+
+.grid-item{
+  width: 9.5rem;
+  height: 9.5rem;
+  background-color: #FAFCFF;
+
+}
+
+.shape-fill {
+  fill: hsl(261, 37%, 44%);
+}
+
+
+/* ############################# */
+
