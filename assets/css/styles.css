@@ -1,0 +1,111 @@
+/* ======RESET CSS======== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+
+.container{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.section-header{
+  min-height: calc(100vh + 80px);
+  background-image: url('../img/rockte.svg'), url('../img//background-1.svg');
+  background-size: contain, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom right, bottom right;
+  background-clip: border-box;
+  overflow: hidden;
+}
+
+.logoFap{
+  padding:1rem;
+}
+
+.holder{
+  max-width: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  position: relative;
+  margin: 5rem 5rem 5rem 6rem;
+
+}
+
+.holder::after{
+  position: absolute;
+  top: -90px;
+  content: '';
+  width: 550px;
+  height: 525px;
+  background-image: url('../img/polygon.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.logoSBC img{
+  width: 11rem;
+}
+
+.more{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.date-and-address{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  margin: 1.5rem 0;
+  font-size: 1rem;
+}
+
+.text-purple{
+  color: #7E57C2;
+  font-weight: 700;
+}
+
+.btn-more{
+  display: block;
+  width: 200px;
+  padding: 1rem 3rem;
+  background-color: #385984;
+  color: #ffff;
+  border-radius: 2rem;
+  font-size: 1rem;
+  text-align: center;
+  margin: 1.5rem 0;
+}
