@@ -1,85 +1,8 @@
-/* ======RESET CSS======== */
-:root{
-  font-size: 16px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-
-  font-size: 0.8rem;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: 'Inter', sans-serif;
-  font-size: 1rem;
-}
-
-
-a {
-  text-decoration: none;
-}
-ul {
-  list-style: none;
-  list-style-position: inside;
-}
-ol{
-  list-style-position: inside;
-}
-h3{
-  font-weight: 500;
-  line-height: 19px;
-
-  color: #FFFFFF;
-
-  margin-top: 0.5rem;
-}
-h4{
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.1rem;
-  line-height: 24px;
-
-  color: #131F2E;
-
-  margin-top: 0.5rem;
-}
-h5{
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  line-height: 20px;
-  
-  color: #385984;
-
-  margin-top: 0.6rem;
-}
-p{
-  font-size: 1rem;
-}
-
-.container{
-  max-width: 1320px;
-  margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 /* HEADER */
 
 .section-header{
   min-height: calc(100vh + 80px);
-  background-image: url('../img/rockte.svg'), url('../img//background-1.svg');
+  background-image: url('../img/rocket-1.svg'), url('../img/background.svg');
   background-size: contain, cover;
   background-repeat: no-repeat, no-repeat;
   background-position: bottom right, bottom right;
@@ -106,8 +29,8 @@ p{
   position: absolute;
   top: -90px;
   content: '';
-  width: 550px;
-  height: 525px;
+  width: 580px;
+  height: 550px;
   background-image: url('../img/polygon.svg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -154,11 +77,30 @@ p{
   color: #ffff;
   border-radius: 2rem;
   font-size: 1rem;
+  font-weight: 600;
   text-align: center;
+}
+
+.btn:hover{
+  filter: brightness(0.9);
+  transition: 0.2s;
 }
 
 .btn-more{
   margin: 1.5rem 0;
+}
+
+.social-media{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.social-media a img{
+  width: 32px;
+}
+
+.text-blue{
+  color: #385984;
 }
 
 /* ######################## */
@@ -207,6 +149,7 @@ p{
   align-items: center;
   justify-content: center;
   margin-top: 3.5rem;
+  font-weight: 600;
 }
 
 .contain-time{
@@ -312,7 +255,6 @@ p{
   align-items: center;
   background-color: #fff;
   width: 100%;
-  /* padding: 10px 40px 10px 10px; */
   padding: 1rem;
 }
 
@@ -362,10 +304,10 @@ p{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  line-height: 1.8;
 }
 
 .address, .contact{
-  border: 1px solid black;
   padding: 1.5rem 3rem 1.5rem 1.5rem;
   border-radius: 10px;
 
@@ -402,9 +344,7 @@ p{
   height:500px;
   width:500px;
   border-radius: 0.5rem;
-
 }
-
 
 .sponsorship{
   display: flex;
@@ -428,6 +368,10 @@ p{
 
 .section-footer{
   text-align: center;
+}
+
+.section-footer h2{
+  font-size: 2rem;
 }
 
 .footer-img{

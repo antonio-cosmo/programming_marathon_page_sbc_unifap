@@ -1,0 +1,73 @@
+/* ======RESET CSS======== */
+:root{
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+
+  font-size: 1rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+}
+
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+/* h3{
+  font-weight: 500;
+  line-height: 19px;
+
+  color: #FFFFFF;
+
+  margin-top: 0.5rem;
+}
+h4{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 24px;
+
+  color: #131F2E;
+
+  margin-top: 0.5rem;
+}
+h5{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  
+  color: #385984;
+
+  margin-top: 0.6rem;
+}
+p{
+  font-size: 1rem;
+} */
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
