@@ -30,6 +30,10 @@ a {
 }
 ul {
   list-style: none;
+  list-style-position: inside;
+}
+ol{
+  list-style-position: inside;
 }
 h3{
   font-weight: 500;
@@ -61,11 +65,11 @@ h5{
   margin-top: 0.6rem;
 }
 p{
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .container{
-  max-width: 1440px;
+  max-width: 1320px;
   margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -143,15 +147,17 @@ p{
   font-weight: 700;
 }
 
-.btn-more{
+.btn{
   display: block;
-  width: 200px;
-  padding: 1rem 3rem;
+  padding: 1rem 3.5rem;
   background-color: #385984;
   color: #ffff;
   border-radius: 2rem;
   font-size: 1rem;
   text-align: center;
+}
+
+.btn-more{
   margin: 1.5rem 0;
 }
 
@@ -426,17 +432,14 @@ p{
 
 .footer-img{
   margin: 3rem auto;
-  display: inline-flex;
-  justify-content: space-between;
+  display: flex;
   align-items: center;
+  justify-content: center;
   gap: 3rem;
-
+  flex-wrap: wrap;
   padding: 1.25rem;
-
-  min-width: 980px;
-  width: 80%;
 }
 
-.organization .footer-img img{
+.organization img{
   width: 9.3rem;
 }

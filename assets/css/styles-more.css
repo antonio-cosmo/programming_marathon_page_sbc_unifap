@@ -3,8 +3,8 @@
 .pageInfor-home{
   background-image: url('../img/rocket-22.svg'), url('../img/cloud.svg') ;
   background-repeat: no-repeat, no-repeat;
-  background-position: 800px -100px, top right;
-  background-size: contain, 750px;
+  background-position: 140% 100%, top right;
+  background-size: 900px 900px, 750px;
 }
 .pageInfor-header-contain{
   display: flex;
@@ -26,6 +26,12 @@
 
 .navbar a{
   color: #fff;
+  font-size: 1rem;
+}
+.pageInfor-logoSBC{
+  background-color: #fff;
+  border-radius: 4px;
+
 }
 .pageInfor-logoSBC img {
   width: 5rem;
@@ -33,6 +39,7 @@
 
 /* HOME  */
 .calendar{
+  list-style-position: inside;
   max-width: 40rem;
   display: flex;
   flex-direction: column;
@@ -72,10 +79,10 @@
 
 /* SECAO2 */
 
-.pageInfor-section2{
+.pageInfor-section-event{
   display: flex;
   margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 6rem;
 }
 .pageInfor-code-evironment{
   background-color: #385984;
@@ -117,6 +124,20 @@
   height: 26rem;
   min-width: 1.5rem;
   background-color: #131F2E;
+  position: relative;
+}
+
+.pageInfor-divisor::after{
+  content: '';
+  width: 60px;
+  height: 60px;
+  background-image: url('/assets/img/icons/Medal.jpg');
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position:absolute;
+  bottom: -60px;
+  left: -16px;
 }
 
 .pageInfor-hours{
@@ -187,4 +208,67 @@
   border-top:24px solid #131F2E ;
   border-left: 50px solid #131F2E;
  
+}
+
+
+/* SECTION PLACE  */
+
+.pageInfor-place{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pageInfor-place h2{
+  padding-bottom: 2rem;
+  color: #385984;
+}
+
+.pageInfor-map-place{
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 3.75rem;
+  margin-bottom: 3.75rem;
+}
+
+.pageInfor-cards-contact{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about{
+
+}
+.role{
+
+}
+.about p{
+  text-align: justify;
+  text-indent: 2rem;
+  padding: 1rem 0;
+  line-height: 1.3;
+}
+
+.about h2, .role h2{
+  text-align: center;
+}
+
+.role ul{
+  list-style: disc;
+  /* list-style-position: inside; */
+  padding-left: 1rem;
+}
+.role ul > li {
+  text-align: justify;
+  padding: 1rem 0;
+
+}
+.role ol {
+  padding-top: 2rem;
+}
+.role ol > li{
+  padding: 1rem 0;
+  margin-left: 2rem;
 }
