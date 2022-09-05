@@ -33,6 +33,11 @@
   .holder p{
     max-width: 90%;
   }
+
+  .date-and-address{
+    margin: 1rem 0;
+  }
+
   #btn-more{
     margin-top: 4rem;
   }
@@ -49,16 +54,19 @@
   }
 
   /*====TIMELINE====*/
-  .timeline{
-    display: flex;
-    justify-content: center;
+  
+  .scheldule-row-1, .scheldule-row-3 {
+    padding-right: 7.6rem;
   }
-  .timeline img{
-    height: 930px;
-    width: 910px;
-    
-    transition: ease, all 0.5;
+
+  .scheldule-row-2 .divider{
+    margin: 0 10px ;
   }
+
+  .start, .warm-up, .competition, .lunch, .closing {
+    width: 15rem;
+  }
+
   .steps{
     display: flex;
     flex-direction: column;
@@ -117,7 +125,7 @@
 }
 
 /*===TIMELINE===*/
-.timeline{
+/* .timeline{
   display: flex;
   justify-content: center;
 }
@@ -126,8 +134,43 @@
   width: 710px;
 
   transition: ease, all 0.5;
+} */
+
+.contain-time{
+  gap: 0.3rem;
 }
 
+.scheldule-items{
+  width: 720px;
+}
+.scheldule-row-2{
+  width: 720px;
+}
+.scheldule-row-1, .scheldule-row-3 {
+  padding-right: 5.7rem;
+}
+
+.scheldule-row-2 .divider{
+  height: 400px;
+  border: 1px solid #FAFCFF;
+}
+
+.start, .warm-up, .competition, .lunch, .closing {
+  width: 14rem;
+}
+
+.hour-09, .hour-10, .hour-12, .hour-14, .hour-20 {
+  font-size: 0.8rem;
+  width: 80px;
+  height: 80px;
+}
+
+.start img, .lunch img, .closing img, .warm-up img, .competition img {
+  padding: 0 5px;
+}
+.start span, .lunch span, .closing span, .warm-up span, .competition span {
+  padding: 0.5rem;
+}
 /*====FOOTER====*/
 #svg-footer{
   margin-top: -1%;
@@ -138,17 +181,47 @@
   .holder::after{
     width: 100px;
   }
+
+  .holder p{
+    text-align: center;
+    max-width: 100%;
+  }
   /*===TIMELINE===*/
-.timeline{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.contain-time{
+  gap: 0.3rem;
 }
-.timeline img{
-  height: 420px;
-  width: 380px;
-  
-  transition: ease, all 0.5;
+
+.scheldule-items{
+  width: 720px;
+}
+.scheldule-row-2{
+  width: 720px;
+}
+.scheldule-row-1, .scheldule-row-3 {
+  padding-right: 5.7rem;
+}
+
+.scheldule-row-2 .divider{
+  height: 400px;
+  border: 1px solid #FAFCFF;
+}
+
+.start, .warm-up, .competition, .lunch, .closing {
+  width: 14rem;
+}
+
+.hour-09, .hour-10, .hour-12, .hour-14, .hour-20 {
+  font-size: 0.8rem;
+  width: 80px;
+  height: 80px;
+}
+
+.start img, .lunch img, .closing img, .warm-up img, .competition img {
+  padding: 0 5px;
+}
+.start span, .lunch span, .closing span, .warm-up span, .competition span {
+  padding: 0.5rem;
 }
 
 /*====MAP====*/
@@ -172,6 +245,22 @@
 }
 }
 
+@media screen and (max-width: 655px){
+  .scheldule{
+    display: none;
+  }
+  .timeline{
+    display: flex;
+    justify-content: center;
+  }
+  .timeline img{
+    height: 500px;
+    width: 130%;
+    
+    transition: ease, all 0.5;
+  }
+}
+
 @media screen and (max-width: 425px){
   html{
     min-width: 100vw;
@@ -182,6 +271,9 @@
     width: 100px;
   }
     /*===TIMELINE===*/
+.scheldule{
+  display: none;
+}
 .timeline{
   display: flex;
   justify-content: center;
@@ -192,6 +284,8 @@
   
   transition: ease, all 0.5;
 }
+
+
 .gmap_canvas{
   display: flex;
   justify-content: center;

@@ -1,7 +1,7 @@
 /* HEADER */
 
 .section-header{
-  min-height: calc(100vh + 80px);
+  min-height: 800px;
   background-image: url('../img/rocket-1.svg'), url('../img/background.svg');
   background-size: contain, cover;
   background-repeat: no-repeat, no-repeat;
@@ -17,7 +17,7 @@
 }
 
 .holder{
-  max-width: 25rem;
+  max-width: 28rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,15 +57,22 @@
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  gap: 3rem;
+  gap: 0.3rem;
   margin: 1.5rem 0;
   font-size: 1rem;
 }
 
+.date-and-address > div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
 .date-and-address p, .date-and-address a{
   width: 100%;
-  margin-left: -10%;
 }
+
 
 .text-purple{
   color: #7E57C2;
@@ -111,7 +118,7 @@
 /* SEÇAO TIMELINE */
 
 .section-timeline{
-  min-height: 100vh;
+ 
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg, #385984 70%,#385984 20% );
 }
 
@@ -186,6 +193,7 @@
 .scheldule-row-2 .col-1{
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   gap: 5rem;
 }
 
@@ -212,6 +220,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  text-align: center;
 }
 
 .hour-09{
@@ -271,6 +280,10 @@
  
 }
 
+.timeline{
+  display: none;
+}
+
 
 /* ############################## */
 
@@ -278,7 +291,7 @@
 /* SECTION PLACE */
 
 .section-place{
-  min-height: 100vh;
+ 
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg, #385984 5%, #7E57C2 99.58%);
 }
 
