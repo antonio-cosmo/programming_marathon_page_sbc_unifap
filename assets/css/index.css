@@ -8,6 +8,8 @@
   background-position: bottom right, bottom right;
   background-clip: border-box;
   overflow: hidden;
+
+  margin-bottom: -1%;
 }
 
 .logoFap{
@@ -384,6 +386,6 @@
   padding: 1.25rem;
 }
 
-.organization img{
+.organitation img{
   width: 9.3rem;
 }
