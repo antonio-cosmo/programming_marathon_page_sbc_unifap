@@ -178,9 +178,9 @@
     min-width: 100%
 ;
   }
-.holder::after{
-  background-image:none;
-}
+  .holder::after{
+    width: 100px;
+  }
     /*===TIMELINE===*/
 .timeline{
   display: flex;
