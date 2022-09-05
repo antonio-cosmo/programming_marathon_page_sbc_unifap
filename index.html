@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/global.css">
   <link rel="stylesheet" href="./assets/css/index.css">
-  <!-- <link rel="stylesheet" href="./assets/css/media.css"> -->
+  <link rel="stylesheet" href="./assets/css/media.css">
 
   <title>UniFAP | Maratona SBC</title>
 </head>
@@ -25,7 +25,7 @@
         <img src="./assets/img/logoFap.svg" alt="Logo da UniFap">
       </div>
 
-      <div class="container">
+      <div class="container-header">
 
         <div class="holder">
 
@@ -48,7 +48,7 @@
                 fase </span> da <span class="text-purple"> XXVII Maratona de Programação.</span>
               <span class="text-purple">Monte seu time</span> e faça parte deste evento.
             </p>
-            <a class="btn btn-more" href="./informations.html">Saiba mais</a>
+            <a id="btn-more"class="btn btn-more" href="./informations.html">Saiba mais</a>
             <div class="social-media">
               <a href="">
                 <img src="../assets/img/social-media/linkedIn.svg" alt="">
@@ -111,7 +111,7 @@
             </p>
           </li>
 
-          <li>
+          <li id="especial-li">
             <img src="./assets/img/icons/coffe.svg" alt="">
             <h3>
               Time Café com Leite
@@ -121,82 +121,11 @@
             </p>
           </li>
         </ul>
-        <div class="scheldule">
 
-          <h2>Agenda</h2>
-          <div class="scheldule-items">
+        <div class="timeline">
+          <img src="/assets/img/timeline-complete.svg" alt="">
+        </div>  
 
-            <div class="scheldule-row-1">
-              <div class="contain-time">
-                <div class="time hour-09">
-                  09:00 AM
-                </div>
-                <div class="start">
-                  <img src="./assets/img/icons/PlayOutline.svg" alt="">
-                  <span>Inicio</span>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="scheldule-row-2">
-              <div class="col-1">
-                <div class="contain-time">
-
-                  <div class="warm-up">
-                    <span>Aquecimento dos times</span>
-                    <img src="./assets/img/icons/FireOutline.svg" alt="">
-
-                  </div>
-                  <div class="time hour-10">
-                    10:00 AM
-                  </div>
-                </div>
-
-                <div class="contain-time">
-
-                  <div class="competition">
-                    <span>Competição entre times</span>
-                    <img src="./assets/img/icons/CodeOutline.svg" alt="">
-                  </div>
-                  <div class="time hour-14">
-                    14:00 PM
-                  </div>
-                </div>
-              </div>
-
-              <div class="divider">
-
-              </div>
-
-              <div class="col-2">
-                <div class="contain-time">
-                  <div class="time hour-12">
-                    12:00 PM
-                  </div>
-                  <div class="lunch">
-                    <img src="./assets/img/icons/BellOutline.svg" alt="">
-                    <span>Almoço</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="scheldule-row-3">
-              <div class="contain-time">
-                <div class="time hour-20">
-                  20:00 PM
-                </div>
-                <div class="closing">
-                  <img src="./assets/img/icons/FlagOutline.svg" alt="">
-                  <span>Encerramento</span>
-                </div>
-              </div>
-            </div>
-
-
-          </div>
-        </div>
       </div>
     </section>
 
@@ -212,7 +141,6 @@
                 <iframe width="500" height="500" id="gmap_canvas"
                   src="https://maps.google.com/maps?q=Centro%20Universit%C3%A1rio%20Para%C3%ADso%20-%20UniFAP%20-%20Rua%20Concei%C3%A7%C3%A3o%20-%20S%C3%A3o%20Miguel,%20Juazeiro%20do%20Norte%20-%20CE&t=&z=13&ie=UTF8&iwloc=&output=embed"
                   frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                <a href="https://www.embedgooglemap.net">google maps embed link</a>
               </div>
             </div>
           </div>
@@ -269,7 +197,7 @@
     </section>
 
     <div class="footer-section-place">
-      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <svg id="svg-footer"data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
         <path
           d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
           class="shape-fill"></path>
@@ -279,7 +207,7 @@
 
     <footer class="section-footer container">
       <h2>Organização</h2>
-      <div class="organization">
+      <div class="organitation">
         <div class="footer-img">
 
           <img src="./assets/img/organitation/logo-si.png" alt="">
