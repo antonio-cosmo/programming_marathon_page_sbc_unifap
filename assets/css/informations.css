@@ -1,9 +1,9 @@
-
+@import './global.css';
 /* HEADER  */
 .pageInfor-home{
   background-image: url('../img/rocket-2.svg'), url('../img/cloud.svg') ;
   background-repeat: no-repeat, no-repeat;
-  background-position: 140% 100%, top right;
+  background-position: 130% 40%, top right;
   background-size: 900px 900px, 750px;
 }
 .pageInfor-header-contain{
@@ -45,19 +45,22 @@
 }
 
 /* HOME  */
+.container-calendar{
+  display: block;
+}
 .calendar{
   list-style-position: inside;
-  max-width: 40rem;
+  max-width: 50rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   background-color: #EDF0F2;
   color: #385984;
   padding: 2rem;
-  gap: 2rem;
+  gap: 1rem;
 
   border-radius: 1rem;
-  margin: 4rem 0;
+  margin: 1.5rem 0 3rem;
 }
 
 .date{
@@ -109,8 +112,8 @@
 
 .pageInfor-section-event{
   display: flex;
-  margin-top: 3rem;
-  margin-bottom: 6rem;
+  padding-top: 2rem;
+  margin-bottom: 3rem;
   justify-content: space-between;
   align-items: flex-start;
   gap: 2rem;
@@ -146,8 +149,11 @@
   color: #385984;
 }
 
-.language, .evironment{
-  padding: 2rem 0 2rem 2rem;
+.language{
+  padding: 2rem;
+}
+.evironment{
+  padding: 2rem 2rem 0 2rem;
 }
 
 .pageInfor-divisor{
@@ -231,13 +237,13 @@
 /* SECTION PLACE  */
 
 .pageInfor-place{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding-top: 2rem;
+  margin-bottom: 3rem;
 }
 .pageInfor-place h2{
   padding-bottom: 2rem;
   color: #385984;
+  text-align: center;
 }
 
 .pageInfor-map-place{
@@ -295,20 +301,28 @@
 .mapouter{
   position:relative;
   text-align:right;
-  height:500px;
-  width: 500px;
+  
 }
 .gmap_canvas {
   overflow:hidden;
   background:none!important;
-  height:500px;
-  width:500px;
+  
   border-radius: 0.5rem;
+}
+
+#gmap_canvas{
+  width: 500px;
+  height: 500px
+}
+
+.gmap_canvas a{
+  display: none;
 }
 /* SECTION ABOUT  */
 
 .pageInfor-section-about{
-  margin-bottom: 6rem;
+  padding-top: 2rem;
+  margin-bottom: 3rem;
 }
 
 .pageInfor-section-about h2{
@@ -320,12 +334,7 @@
   color: #385984;
 }
 
-.about{
 
-}
-.rule{
-
-}
 .about p{
   text-align: justify;
   text-indent: 2rem;
@@ -357,17 +366,16 @@
 /* FOOTER  */
 
 .section-footer{
-  text-align: center;
+  margin-bottom: 3rem;
+
 }
 
 .footer-img{
-  margin: 3rem auto;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 3rem;
   flex-wrap: wrap;
-  padding: 1.25rem;
 }
 
 .organization img{

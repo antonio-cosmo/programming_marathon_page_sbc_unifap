@@ -1,4 +1,5 @@
 /* HEADER */
+@import './global.css';
 
 .section-header{
   min-height: 800px;
