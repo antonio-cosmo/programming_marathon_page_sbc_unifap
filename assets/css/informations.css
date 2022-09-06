@@ -187,6 +187,8 @@
   flex-direction: column;
   gap: 6rem;
   padding: 6rem 0;
+  align-items: flex-end;
+
 }
 
 .pageInfor-hours-col-2{

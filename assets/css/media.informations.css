@@ -86,6 +86,9 @@
   .pageInfor-divisor{
     min-width: 0.6rem;
   }
+  .pageInfor-divisor::after{
+    left: -23px;
+  }
 
   .pageInfor-hour-col-1::after{
     border-top: 0.6rem solid #131F2E;

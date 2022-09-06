@@ -42,21 +42,15 @@
     margin-top: 4rem;
   }
   .holder::after{
-    position: absolute;
-    top: -90px;
-    content: '';
-    width: 505px;
-    height: 480px;
-    background-image: url('../img/polygon.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    top: -70px;
+    width: 535px;
+    height: 510px;    
   }
 
   /*====TIMELINE====*/
   
   .scheldule-row-1, .scheldule-row-3 {
-    padding-right: 7.6rem;
+    padding-right: 9.2rem;
   }
 
   .scheldule-row-2 .divider{
@@ -109,10 +103,15 @@
 @media screen and (max-width: 965px){
   html{
     font-size: 87.5%;
-    /* width: 100vw;
-    overflow-x: hidden; */
+    width: 100vw;
+    overflow-x: hidden;
   }
 /* SECTION PLACE */
+.holder::after{
+  top: -70px;
+  width: 545px;
+  height: 520px;    
+}
 .map-place{
   display: flex;
   flex-direction: column;
@@ -147,12 +146,11 @@
   width: 720px;
 }
 .scheldule-row-1, .scheldule-row-3 {
-  padding-right: 5.7rem;
+  padding-right: 8.6rem;
 }
 
 .scheldule-row-2 .divider{
-  height: 400px;
-  border: 1px solid #FAFCFF;
+  height: 300px;
 }
 
 .start, .warm-up, .competition, .lunch, .closing {
@@ -180,6 +178,7 @@
 @media screen and (max-width: 725px){
   .holder::after{
     width: 100px;
+    height: 550px;
   }
 
   .holder p{
@@ -198,14 +197,7 @@
 .scheldule-row-2{
   width: 720px;
 }
-.scheldule-row-1, .scheldule-row-3 {
-  padding-right: 5.7rem;
-}
 
-.scheldule-row-2 .divider{
-  height: 400px;
-  border: 1px solid #FAFCFF;
-}
 
 .start, .warm-up, .competition, .lunch, .closing {
   width: 14rem;
@@ -281,11 +273,14 @@
 @media screen and (max-width: 425px){
   html{
     min-width: 100vw;
-    min-width: 100%
-;
+    min-width: 100%;
   }
   .holder::after{
     width: 100px;
+  }
+
+  .steps li{
+    width: 280px;
   }
     /*===TIMELINE===*/
 /* .scheldule{
