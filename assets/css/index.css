@@ -56,7 +56,6 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
   align-items: center;
   gap: 0.3rem;
   margin: 1.5rem 0;
@@ -351,15 +350,20 @@
 .mapouter{
   position:relative;
   text-align:right;
-  height:500px;
-  width: 500px;
 }
 .gmap_canvas {
   overflow:hidden;
   background:none!important;
-  height:500px;
-  width:500px;
   border-radius: 0.5rem;
+}
+
+#gmap_canvas{
+  width: 600px;
+  height: 500px
+}
+
+.gmap_canvas a{
+  display: none;
 }
 
 .sponsorship{
@@ -382,11 +386,8 @@
 
 /* SECTION FOOTER  */
 
-.section-footer{
-  text-align: center;
-}
-
 .section-footer h2{
+  text-align: center;
   font-size: 2rem;
 }
 
@@ -397,7 +398,6 @@
   justify-content: center;
   gap: 3rem;
   flex-wrap: wrap;
-  padding: 1.25rem;
 }
 
 .organitation img{

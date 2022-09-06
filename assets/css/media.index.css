@@ -109,8 +109,8 @@
 @media screen and (max-width: 965px){
   html{
     font-size: 87.5%;
-    width: 100vw;
-    overflow-x: hidden;
+    /* width: 100vw;
+    overflow-x: hidden; */
   }
 /* SECTION PLACE */
 .map-place{
@@ -246,6 +246,10 @@
 }
 
 @media screen and (max-width: 655px){
+  .contain{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
   .scheldule{
     display: none;
   }
@@ -259,6 +263,19 @@
     
     transition: ease, all 0.5;
   }
+
+  .date-and-address{
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .holder{
+    margin: 6rem 0 5rem ;
+  }
+  .holder p{
+    text-align: justify;
+  }
 }
 
 @media screen and (max-width: 425px){
@@ -271,13 +288,13 @@
     width: 100px;
   }
     /*===TIMELINE===*/
-.scheldule{
+/* .scheldule{
   display: none;
 }
 .timeline{
   display: flex;
   justify-content: center;
-}
+} */
 .timeline img{
   height: 400px;
   width: 330px;
