@@ -80,8 +80,11 @@
     min-width: 100vw;
     min-width: 100%;
   }
+  .menu{
+    display: flex;
+  }
   .navbar{
-    gap: 0;
+    display: none;
   }
   .pageInfor-divisor{
     min-width: 0.6rem;
@@ -99,6 +102,7 @@
     border-left: 40px solid #131F2E;
   }
 
+
 }
 
 @media screen and (max-width: 425px){
@@ -106,14 +110,11 @@
     min-width: 100vw;
     min-width: 100%;
   }
+ 
   .pageInfor-logoSBC img{
-    width: 2rem;
+    width: 3rem;
   }
-  .link{
-    padding: 0.3rem;
-    font-size: 0.75rem;
-  }
-
+  
   .cards{
     flex-direction: column;
   }

@@ -7,6 +7,7 @@
   background-size: 900px 900px, 750px;
 }
 .pageInfor-header-contain{
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -57,7 +58,7 @@
   background-color: #EDF0F2;
   color: #385984;
   padding: 2rem;
-  gap: 1rem;
+  gap: 0.75rem;
 
   border-radius: 1rem;
   margin: 1.5rem 0 3rem;
@@ -73,8 +74,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 4rem;
+  height: 4rem;
   border: 1px solid transparent;
   border-radius: 50%;
   background: #FFC107;
@@ -382,4 +383,87 @@
 
 .organization img{
   width: 9.3rem;
+}
+
+
+/* MENU  */
+
+
+.menu{
+  height: 100%;
+  display: none;
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  z-index: 9999;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  justify-content: center;
+}
+.navbar-mobile{
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #385984;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+}
+.link-mobile{
+  padding: 1rem;
+}
+.link-mobile a{
+  color: #EDF0F2;
+}
+
+#checkbox-menu{
+  position: absolute;
+  opacity: 0;
+}
+
+label{
+  cursor: pointer;
+  position: relative;
+  display: block;
+  height: 22px;
+  width: 30px;
+}
+
+label span{
+  position: absolute;
+  display: block;
+  height: 3px;
+  width: 100%;
+  border-radius: 30px;
+  background: #FFC107;
+  transition: 0.25s ease-in-out;
+}
+
+label span:nth-child(1){
+  top: 0;
+}
+
+label span:nth-child(2){
+  top: 8px;
+}
+
+label span:nth-child(3){
+  top: 16px;
+}
+
+#checkbox-menu:checked + label span:nth-child(1){
+  transform: rotate(-45deg);
+  top: 8px;
+}
+
+#checkbox-menu:checked + label span:nth-child(2){
+  opacity: 0;
+}
+
+#checkbox-menu:checked + label span:nth-child(3){
+  transform: rotate(45deg);
+  top:8px;
+}
+
+#checkbox-menu:checked + label + .navbar-mobile{
+  display: flex;
 }
