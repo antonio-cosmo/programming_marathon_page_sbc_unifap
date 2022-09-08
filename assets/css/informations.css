@@ -1,6 +1,6 @@
 @import './global.css';
 /* HEADER  */
-.pageInfor-home{
+.pageInfor-section-home{
   background-image: url('../img/rocket-2.svg'), url('../img/cloud.svg') ;
   background-repeat: no-repeat, no-repeat;
   background-position: 130% 40%, top right;
@@ -239,11 +239,11 @@
 
 /* SECTION PLACE  */
 
-.pageInfor-place{
+.pageInfor-section-place{
   padding-top: 2rem;
   margin-bottom: 3rem;
 }
-.pageInfor-place h2{
+.pageInfor-section-place h2{
   padding-bottom: 2rem;
   color: #385984;
   text-align: center;
@@ -368,7 +368,7 @@
 
 /* FOOTER  */
 
-.section-footer{
+.pageInfor-section-footer{
   margin-bottom: 3rem;
 
 }

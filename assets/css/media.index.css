@@ -1,8 +1,8 @@
-@media screen and (max-width: 1080px){
+@media screen and (max-width: 1200px){
   html{
     font-size: 93.75%;
   }
-/*====HOME====*/
+
   .section-header{
     min-height: calc(60vh + 80px);
     background-image: url("/assets/img/background-resopnsive-home.svg");
@@ -20,15 +20,75 @@
     align-items: center;
   }
   .holder{
-    width: 100%;
-    max-width: 20rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-    position: relative;
-    gap: 1rem;
+    margin: 5rem 0 8rem;
+  }
+  .holder::after{
+    top: -70px;
+    width: 535px;
+    height: 510px;    
+  }
+  
+}
+
+@media screen and (max-width: 992px){
+  html{
+    font-size: 87.5%;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+/* SECTION PLACE */
+  .holder::after{
+    top: -70px;
+    width: 545px;
+    height: 520px;    
+  }
+ 
+
+  .contain-time{
+    gap: 0.3rem;
+  }
+
+  .scheldule-items{
+    width: 720px;
+  }
+  .scheldule-row-2{
+    width: 720px;
+  }
+  .scheldule-row-1, .scheldule-row-3 {
+    padding-right: 8.6rem;
+  }
+
+  .scheldule-row-2 .divider{
+    height: 300px;
+  }
+
+  .start, .warm-up, .competition, .lunch, .closing {
+    width: 14rem;
+  }
+
+  .hour-09, .hour-10, .hour-12, .hour-14, .hour-20 {
+    font-size: 0.8rem;
+    width: 80px;
+    height: 80px;
+  }
+
+  .start img, .lunch img, .closing img, .warm-up img, .competition img {
+    padding: 0 5px;
+  }
+  .start span, .lunch span, .closing span, .warm-up span, .competition span {
+    padding: 0.5rem;
+  }
+  /*====FOOTER====*/
+  #svg-footer{
+    margin-top: -1%;
+  }
+
+}
+
+@media screen and (max-width: 940px){
+  .holder{
+    max-width: 24rem;
+    
    }
   .holder p{
     max-width: 90%;
@@ -47,7 +107,6 @@
     height: 510px;    
   }
 
-  /*====TIMELINE====*/
   
   .scheldule-row-1, .scheldule-row-3 {
     padding-right: 9.2rem;
@@ -61,7 +120,7 @@
     width: 15rem;
   }
 
-  .steps{
+  /* .steps{
     display: flex;
     flex-direction: column;
     grid-template-columns: repeat(4, 1fr);
@@ -70,6 +129,10 @@
 
     justify-content: center;
     align-items: center;
+  } */
+
+  .steps{
+    grid-template-columns: repeat(2, 1fr);
   }
   
   .steps li {
@@ -87,6 +150,7 @@
     -webkit-backdrop-filter: blur( 13.5px );
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.116);
+    justify-self: center;
   }
   
   .steps h3, .steps p{
@@ -94,150 +158,89 @@
     margin-inline: 10%;
   }
 
-  /*====FOOTER====*/
-#svg-footer{
-  margin-top: -1%;
-}
-}
-
-@media screen and (max-width: 965px){
-  html{
-    font-size: 87.5%;
-    width: 100vw;
-    overflow-x: hidden;
-  }
-/* SECTION PLACE */
-.holder::after{
-  top: -70px;
-  width: 545px;
-  height: 520px;    
-}
-.map-place{
-  display: flex;
-  flex-direction: column;
-
-  justify-content: center;
-  align-items: center;
-}
-.cards-contact{
-  gap: 2rem;
+  #svg-footer{
+    margin-top: -1%;
+  } 
 }
 
-/*===TIMELINE===*/
-/* .timeline{
-  display: flex;
-  justify-content: center;
-}
-.timeline img{
-  height: 730px;
-  width: 710px;
-
-  transition: ease, all 0.5;
-} */
-
-.contain-time{
-  gap: 0.3rem;
-}
-
-.scheldule-items{
-  width: 720px;
-}
-.scheldule-row-2{
-  width: 720px;
-}
-.scheldule-row-1, .scheldule-row-3 {
-  padding-right: 8.6rem;
-}
-
-.scheldule-row-2 .divider{
-  height: 300px;
-}
-
-.start, .warm-up, .competition, .lunch, .closing {
-  width: 14rem;
-}
-
-.hour-09, .hour-10, .hour-12, .hour-14, .hour-20 {
-  font-size: 0.8rem;
-  width: 80px;
-  height: 80px;
-}
-
-.start img, .lunch img, .closing img, .warm-up img, .competition img {
-  padding: 0 5px;
-}
-.start span, .lunch span, .closing span, .warm-up span, .competition span {
-  padding: 0.5rem;
-}
-/*====FOOTER====*/
-#svg-footer{
-  margin-top: -1%;
-}
-}
-
-@media screen and (max-width: 725px){
+@media screen and (max-width: 768px){
   .holder::after{
     width: 100px;
-    height: 550px;
   }
 
   .holder p{
     text-align: center;
     max-width: 100%;
   }
-  /*===TIMELINE===*/
+  .steps{
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 1.8rem;
+    gap: 3rem;
 
-.contain-time{
-  gap: 0.3rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .map-place{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+  
+  }
+
+  .map {
+    width: 100%;
+  }
+
+  #gmap_canvas{
+    height: 400px;
+    width: 100%;
+  }
+
+  .cards-contact{
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+
+  .contain-time{
+    gap: 0.3rem;
+  }
+
+  .scheldule-items{
+    width: 720px;
+  }
+  .scheldule-row-2{
+    width: 720px;
+  }
+
+
+  .start, .warm-up, .competition, .lunch, .closing {
+    width: 14rem;
+  }
+
+  .hour-09, .hour-10, .hour-12, .hour-14, .hour-20 {
+    font-size: 0.8rem;
+    width: 80px;
+    height: 80px;
+  }
+
+  .start img, .lunch img, .closing img, .warm-up img, .competition img {
+    padding: 0 5px;
+  }
+  .start span, .lunch span, .closing span, .warm-up span, .competition span {
+    padding: 0.5rem;
+  }
+
+  
+  #svg-footer{
+    margin-top: -1%;
+  }
 }
 
-.scheldule-items{
-  width: 720px;
-}
-.scheldule-row-2{
-  width: 720px;
-}
-
-
-.start, .warm-up, .competition, .lunch, .closing {
-  width: 14rem;
-}
-
-.hour-09, .hour-10, .hour-12, .hour-14, .hour-20 {
-  font-size: 0.8rem;
-  width: 80px;
-  height: 80px;
-}
-
-.start img, .lunch img, .closing img, .warm-up img, .competition img {
-  padding: 0 5px;
-}
-.start span, .lunch span, .closing span, .warm-up span, .competition span {
-  padding: 0.5rem;
-}
-
-/*====MAP====*/
-.gmap_canvas{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.mapouter{
-  display: flex;
-  max-width: 300px;
-}
-.gmap_canvas iframe{
-  max-height: 300px;
-  max-width: 310px;
-}
-/*====FOOTER====*/
-#svg-footer{
-  margin-top: -1%;
-}
-}
-
-@media screen and (max-width: 655px){
+@media screen and (max-width: 576px){
   .contain{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -245,17 +248,37 @@
   .scheldule{
     display: none;
   }
+
+  .contain-place h2{
+    font-size: 1.5rem;
+  }
   .timeline{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 3.75rem;
+  }
+
+  .timeline h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 3.75rem;
   }
   .timeline img{
-    height: 500px;
-    width: 130%;
+    height: 100%;
+    width: 100%;
     
     transition: ease, all 0.5;
   }
-
+  
+  
+  .cards-contact{
+    flex-direction: column;
+    gap: 1rem;
+  }
   .date-and-address{
     flex-direction: column;
     gap: 1rem;
@@ -268,44 +291,14 @@
   .holder p{
     text-align: justify;
   }
-}
 
-@media screen and (max-width: 425px){
-  html{
-    min-width: 100vw;
-    min-width: 100%;
-  }
   .holder::after{
-    width: 100px;
+    height: 535px;
   }
 
   .steps li{
     width: 280px;
   }
-    /*===TIMELINE===*/
-/* .scheldule{
-  display: none;
-}
-.timeline{
-  display: flex;
-  justify-content: center;
-} */
-.timeline img{
-  height: 400px;
-  width: 330px;
-  
-  transition: ease, all 0.5;
-}
-
-
-.gmap_canvas{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.gmap_canvas iframe{
-  max-height: 250px;
-  max-width: 260px;
-}
-
+ 
+ 
 }

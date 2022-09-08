@@ -296,7 +296,7 @@
 }
 
 .contain-place{
-  padding-top: 4rem;
+  padding-top: 3.75rem;
 }
 
 .contain-place h2{
@@ -350,15 +350,17 @@
 .mapouter{
   position:relative;
   text-align:right;
+  
 }
 .gmap_canvas {
   overflow:hidden;
   background:none!important;
+  
   border-radius: 0.5rem;
 }
 
 #gmap_canvas{
-  width: 600px;
+  width: 500px;
   height: 500px
 }
 

@@ -46,13 +46,17 @@ ul {
   padding: 8px;
   background-color: #385984;
   border-radius: 50%;
+  visibility: hidden;
 }
 
 .top-page a{
   display: block;
 }
 .top-page img{
-  
   width: 22px;
   height: 22px;
+}
+
+.activeBtnTop{
+  visibility: visible;
 }
