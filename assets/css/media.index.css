@@ -42,42 +42,33 @@
     width: 545px;
     height: 520px;    
   }
- 
+
 
   .contain-time{
-    gap: 0.3rem;
+    width: 350px;
   }
-
-  .scheldule-items{
-    width: 720px;
+  .item1,
+  .item5 {
+    align-self: flex-end;
+    margin-right: 3.3rem;
   }
-  .scheldule-row-2{
-    width: 720px;
-  }
-  .scheldule-row-1, .scheldule-row-3 {
-    padding-right: 8.6rem;
-  }
-
-  .scheldule-row-2 .divider{
-    height: 300px;
-  }
-
   .start, .warm-up, .competition, .lunch, .closing {
-    width: 14rem;
+    width: 15rem;
   }
 
   .hour-09, .hour-10, .hour-12, .hour-14, .hour-20 {
-    font-size: 0.8rem;
-    width: 80px;
-    height: 80px;
+    font-size: 1rem;
+    width: 90px;
+    height: 90px;
   }
 
   .start img, .lunch img, .closing img, .warm-up img, .competition img {
-    padding: 0 5px;
+    padding: 5px 5px;
   }
   .start span, .lunch span, .closing span, .warm-up span, .competition span {
-    padding: 0.5rem;
+    padding: 0.75rem;
   }
+
   /*====FOOTER====*/
   #svg-footer{
     margin-top: -1%;
@@ -107,29 +98,6 @@
     height: 510px;    
   }
 
-  
-  .scheldule-row-1, .scheldule-row-3 {
-    padding-right: 9.2rem;
-  }
-
-  .scheldule-row-2 .divider{
-    margin: 0 10px ;
-  }
-
-  .start, .warm-up, .competition, .lunch, .closing {
-    width: 15rem;
-  }
-
-  /* .steps{
-    display: flex;
-    flex-direction: column;
-    grid-template-columns: repeat(4, 1fr);
-    padding-top: 1.8rem;
-    gap: 3rem;
-
-    justify-content: center;
-    align-items: center;
-  } */
 
   .steps{
     grid-template-columns: repeat(2, 1fr);
@@ -163,7 +131,29 @@
   } 
 }
 
+@media screen and (max-width: 809px){
+  .contain-time{
+    width: 300px;
+  }
+  .item1,
+  .item5 {
+    align-self: flex-end;
+    margin-right: 2.8rem;
+  }
+
+  .hour-09, .hour-10, .hour-12, .hour-14, .hour-20 {
+    font-size: 0.875rem;
+    width: 80px;
+    height: 80px;
+  }
+ 
+}
+
 @media screen and (max-width: 768px){
+  .contain{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
   .holder::after{
     width: 100px;
   }
@@ -204,39 +194,26 @@
     justify-content: flex-start;
     gap: 1rem;
   }
-
-  .contain-time{
-    gap: 0.3rem;
-  }
-
-  .scheldule-items{
-    width: 720px;
-  }
-  .scheldule-row-2{
-    width: 720px;
-  }
-
-
-  .start, .warm-up, .competition, .lunch, .closing {
-    width: 14rem;
-  }
-
-  .hour-09, .hour-10, .hour-12, .hour-14, .hour-20 {
-    font-size: 0.8rem;
-    width: 80px;
-    height: 80px;
-  }
-
-  .start img, .lunch img, .closing img, .warm-up img, .competition img {
-    padding: 0 5px;
-  }
-  .start span, .lunch span, .closing span, .warm-up span, .competition span {
-    padding: 0.5rem;
-  }
-
   
   #svg-footer{
     margin-top: -1%;
+  }
+}
+@media screen and (max-width: 760px) {
+  .contain-time{
+    width: 250px;
+    gap: 0.3rem;
+  }
+  .item1,
+  .item5 {
+    align-self: flex-end;
+    margin-right: 2.5rem;
+  }
+
+  .hour-09, .hour-10, .hour-12, .hour-14, .hour-20 {
+    font-size: 0.75rem;
+    width: 70px;
+    height: 70px;
   }
 }
 
