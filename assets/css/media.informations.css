@@ -15,8 +15,8 @@
 
   html{
     font-size: 87.5%;
-    width: 100vw;
-    overflow-x: hidden;
+    /* width: 100vw;
+    overflow-x: hidden; */
   }
 
   .pageInfor-section-event{
@@ -66,20 +66,7 @@
   .pageInfor-header-contain{
     gap: 0.5rem;
   }
-  .navbar{
-    gap: 0.5rem;
-  }
-
  
-
-  
-}
-
-@media screen and (max-width: 576px){
-  html{
-    min-width: 100vw;
-    min-width: 100%;
-  }
   .menu{
     display: flex;
   }
@@ -87,8 +74,11 @@
     display: none;
   }
 
-
   
+}
+
+@media screen and (max-width: 576px){
+
   .cards{
     flex-direction: column;
   }
@@ -116,10 +106,3 @@
 
 }
 
-/* @media screen and (max-width: 425px){
-  html{
-    min-width: 100vw;
-    min-width: 100%;
-  }
- 
-} */

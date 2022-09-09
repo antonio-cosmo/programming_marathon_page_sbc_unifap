@@ -27,14 +27,14 @@
     width: 535px;
     height: 510px;    
   }
-  
+  .contain-time{
+    width: 400px;
+  }
 }
 
 @media screen and (max-width: 992px){
   html{
     font-size: 87.5%;
-    width: 100vw;
-    overflow-x: hidden;
   }
 /* SECTION PLACE */
   .holder::after{
@@ -42,10 +42,8 @@
     width: 545px;
     height: 520px;    
   }
-
-
   .contain-time{
-    width: 350px;
+    width: 330px;
   }
   .item1,
   .item5 {
@@ -126,6 +124,10 @@
     margin-inline: 10%;
   }
 
+  .map-place{
+    gap: 2rem;
+  }
+
   #svg-footer{
     margin-top: -1%;
   } 
@@ -145,6 +147,29 @@
     font-size: 0.875rem;
     width: 80px;
     height: 80px;
+  }
+
+  .map-place{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+  
+  }
+
+  .map {
+    width: 100%;
+  }
+
+  #gmap_canvas{
+    height: 400px;
+    width: 100%;
+  }
+
+  .cards-contact{
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
   }
  
 }
@@ -172,28 +197,7 @@
     justify-content: center;
     align-items: center;
   }
-  .map-place{
-    display: flex;
-    flex-direction: column;
-
-    justify-content: center;
   
-  }
-
-  .map {
-    width: 100%;
-  }
-
-  #gmap_canvas{
-    height: 400px;
-    width: 100%;
-  }
-
-  .cards-contact{
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 1rem;
-  }
   
   #svg-footer{
     margin-top: -1%;
@@ -260,6 +264,10 @@
     flex-direction: column;
     gap: 1rem;
     align-items: flex-start;
+  }
+
+  .address, .contact{
+    padding: 1.5rem;
   }
 
   .holder{
