@@ -1,6 +1,43 @@
 /* HEADER */
 @import './global.css';
 
+
+/* PHOSPhOR ICONS  */
+.ph-users-three,
+.ph-clipboard-text,
+.ph-check-circle,
+.ph-coffee {
+  font-size: 4rem;
+}
+
+.ph-linkedin-logo,
+.ph-instagram-logo,
+.ph-facebook-logo {
+  font-size: 36px;
+  color: #385984;
+}
+
+.ph-map-pin,
+.ph-buildings,
+.ph-tray,
+.ph-phone,
+.ph-browser,
+.ph-envelope-simple,
+.ph-calendar-check {
+  font-size: 24px;
+  color: #385984;
+}
+
+.ph-play-circle,
+.ph-fire,
+.ph-bell-ringing,
+.ph-code,
+.ph-flag {
+  font-size: 40px;
+  color: #FFF;
+
+}
+/* ################### */
 .section-header{
   min-height: 800px;
   background-image: url('../img/rocket-1.svg'), url('../img/background.svg');
@@ -15,6 +52,9 @@
 
 .logoFap{
   padding:1rem 1rem;
+}
+.logoFap img{
+  width: 9rem;
 }
 
 .holder{
@@ -238,18 +278,18 @@
   align-items: stretch;
 }
 
-.start img, .lunch img, .closing img, .warm-up img, .competition img{
+.start i, .lunch i, .closing i, .warm-up i, .competition i{
   background: #7E57C2;
  
   padding: 10px;
 }
 
-.start img, .lunch img, .closing img{
+.start i, .lunch i, .closing i{
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
 }
 
-.warm-up img, .competition img{
+.warm-up i, .competition i{
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
  
@@ -402,3 +442,293 @@
 
 
 
+/* MEDIA  */
+@media screen and (max-width: 1200px){
+  html{
+    font-size: 93.75%;
+  }
+
+  .section-header{
+    min-height: calc(60vh + 80px);
+    background-image: url("/assets/img/background-resopnsive-home.svg");
+    background-size: contain, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom right, bottom right;
+    background-clip: border-box;
+    overflow: hidden;
+    margin-bottom: -1%;
+    width: 100%;
+  }
+  .container-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .holder{
+    margin: 5rem 0 8rem;
+  }
+  .holder::after{
+    top: -70px;
+    width: 535px;
+    height: 510px;    
+  }
+  .contain-time{
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 992px){
+  html{
+    font-size: 87.5%;
+  }
+/* SECTION PLACE */
+  .holder::after{
+    top: -70px;
+    width: 545px;
+    height: 520px;    
+  }
+  .contain-time{
+    width: 330px;
+  }
+  .item1,
+  .item5 {
+    align-self: flex-end;
+    margin-right: 3.3rem;
+  }
+  .start, .warm-up, .competition, .lunch, .closing {
+    width: 15rem;
+  }
+
+  .hour-09, .hour-10, .hour-12, .hour-14, .hour-20 {
+    font-size: 1rem;
+    width: 90px;
+    height: 90px;
+  }
+
+  .start i, .lunch i, .closing i, .warm-up i, .competition i {
+    padding: 5px 5px;
+  }
+  .start span, .lunch span, .closing span, .warm-up span, .competition span {
+    padding: 0.75rem;
+  }
+
+  /*====FOOTER====*/
+  #svg-footer{
+    margin-top: -1%;
+  }
+
+}
+
+@media screen and (max-width: 940px){
+  .holder{
+    max-width: 24rem;
+    
+   }
+  .holder p{
+    max-width: 90%;
+  }
+
+  .date-and-address{
+    margin: 1rem 0;
+  }
+
+  #btn-more{
+    margin-top: 4rem;
+  }
+  .holder::after{
+    top: -70px;
+    width: 535px;
+    height: 510px;    
+  }
+
+
+  .steps{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .steps li {
+    text-align: center;
+    color: #fff;
+    
+    width: 307px;
+    max-height: 325px;
+
+    margin-top: 3rem;
+    padding-top: 1rem;
+
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.116);
+    justify-self: center;
+  }
+  
+  .steps h3, .steps p{
+    max-width: 280px;
+    margin-inline: 10%;
+  }
+
+  .map-place{
+    gap: 2rem;
+  }
+
+  #svg-footer{
+    margin-top: -1%;
+  } 
+}
+
+@media screen and (max-width: 809px){
+  .contain-time{
+    width: 300px;
+  }
+  .item1,
+  .item5 {
+    align-self: flex-end;
+    margin-right: 2.8rem;
+  }
+
+  .hour-09, .hour-10, .hour-12, .hour-14, .hour-20 {
+    font-size: 0.875rem;
+    width: 80px;
+    height: 80px;
+  }
+
+  .map-place{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+  
+  }
+
+  .map {
+    width: 100%;
+  }
+
+  #gmap_canvas{
+    height: 400px;
+    width: 100%;
+  }
+
+  .cards-contact{
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+ 
+}
+
+@media screen and (max-width: 768px){
+  .contain{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .holder::after{
+    width: 100px;
+  }
+
+  .holder p{
+    text-align: center;
+    max-width: 100%;
+  }
+  .steps{
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 1.8rem;
+    gap: 3rem;
+
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  #svg-footer{
+    margin-top: -1%;
+  }
+}
+@media screen and (max-width: 760px) {
+  .contain-time{
+    width: 250px;
+    gap: 0.3rem;
+  }
+  .item1,
+  .item5 {
+    align-self: flex-end;
+    margin-right: 2.5rem;
+  }
+
+  .hour-09, .hour-10, .hour-12, .hour-14, .hour-20 {
+    font-size: 0.75rem;
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media screen and (max-width: 576px){
+  .contain{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .scheldule{
+    display: none;
+  }
+
+  .contain-place h2{
+    font-size: 1.5rem;
+  }
+  .timeline{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 3.75rem;
+  }
+
+  .timeline h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 3.75rem;
+  }
+  .timeline img{
+    height: 100%;
+    width: 100%;
+    
+    transition: ease, all 0.5;
+  }
+  
+  
+  .cards-contact{
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .date-and-address{
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .address, .contact{
+    padding: 1.5rem;
+  }
+
+  .holder{
+    margin: 6rem 0 5rem ;
+  }
+  .holder p{
+    text-align: justify;
+  }
+
+  .holder::after{
+    height: 535px;
+  }
+
+  .steps li{
+    width: 280px;
+  }
+ 
+ 
+}

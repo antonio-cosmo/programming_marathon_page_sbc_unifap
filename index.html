@@ -5,13 +5,12 @@
   <meta charset="UTF-8">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+  <script src="https://unpkg.com/phosphor-icons"></script>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/index.css">
-  <link rel="stylesheet" href="./assets/css/media.index.css">
 
   <title>UniFAP | Maratona SBC</title>
 </head>
@@ -21,7 +20,7 @@
     <header id="home" class="section-header contain">
       <div class="logoFap container">
         <a href="https://unifapce.edu.br/" target="_blank">
-          <img src="./assets/img/organitation/logo-fap.svg" alt="Logotipo da UniFap">
+          <img src="./assets/img/organitation/logotipo-unifap.png" alt="Logotipo da UniFap">
         </a>
       </div>
       <div class="container-header">
@@ -32,11 +31,11 @@
           <div class="more">
             <div class="date-and-address">
               <div>
-                <img src="/assets/img/icons/icon-local-blue.svg" alt="Icone localização">
+                <i class="ph-map-pin"></i>
                 <p>8 de Outubro</p>
               </div>
               <div>
-                <img src="/assets/img/icons/icon-date.svg" alt="Icone de calendario">
+                <i class="ph-calendar-check"></i>
                 <a class="text-blue" target="_blank"
                   href="https://www.google.com/maps/place/Centro+Universit%C3%A1rio+Para%C3%ADso+-+UniFAP/@-7.2062168,-39.3111997,17z/data=!3m1!4b1!4m5!3m4!1s0x7a178ad71080c59:0x5b2a22386c2711fd!8m2!3d-7.2062168!4d-39.3111997">
                   UniFAP - Juazeiro do Norte, Ce
@@ -51,15 +50,13 @@
             <a id="btn-more" class="btn btn-more" href="./informations.html">Saiba mais</a>
             <div class="social-media">
               <a href="https://www.linkedin.com/school/unifapce" target="_blank">
-                <img src="../assets/img/social-media/linkedIn.svg" alt="Icone de do linkedin">
+                <i class="ph-linkedin-logo"></i>
               </a>
               <a href="https://www.instagram.com/unifapce/" target="_blank">
-                <img src="../assets/img/social-media/instagram.svg" alt="Icone do instagram">
-
+                <i class="ph-instagram-logo"></i>
               </a>
               <a href="https://www.facebook.com/unifapce" target="_blank">
-                <img src="../assets/img/social-media/facebook.svg" alt="Icone do facebook">
-
+                <i class="ph-facebook-logo"></i>
               </a>
             </div>
           </div>
@@ -70,7 +67,7 @@
     <section class="section-timeline contain">
       <ul class="steps">
         <li>
-          <img src="./assets/img/icons/equipe.svg" alt="Icone que representa uma equipe">
+          <i class="ph-users-three"></i>
           <h3>Monte o seu time</h3>
           <p>
             Os times são formados por 1 Coach e 3 Alunos regularmente matriculados em uma Instituição de Ensino
@@ -78,7 +75,7 @@
           </p>
         </li>
         <li>
-          <img src="./assets/img/icons/board.svg" alt="Icone de uma prancheta de inscrição">
+          <i class="ph-clipboard-text"></i>
           <h3>
             Inscreva seu time no site
           </h3>
@@ -89,7 +86,7 @@
           </p>
         </li>
         <li>
-          <img src="./assets/img/icons/verifica.svg" alt="Icone de item checado">
+          <i class="ph-check-circle"></i>
           <h3>
             Requisitos
           </h3>
@@ -102,7 +99,7 @@
           </p>
         </li>
         <li id="especial-li">
-          <img src="./assets/img/icons/coffe.svg" alt="Icone de uma xicara">
+          <i class="ph-coffee"></i>
           <h3>
             Time Café com Leite
           </h3>
@@ -120,7 +117,7 @@
               09:00 AM
             </div>
             <div class="start">
-              <img src="./assets/img/icons/PlayOutline.svg">
+              <i class="ph-play-circle"></i>
               <span>Inicio</span>
             </div>
           </div>
@@ -129,7 +126,9 @@
               <div class="contain-time item2">
                 <div class="warm-up">
                   <span>Aquecimento dos times</span>
-                  <img src="./assets/img/icons/FireOutline.svg">
+                  <!-- <img src="./assets/img/icons/FireOutline.svg"> -->
+                  <i class="ph-fire"></i>
+
                 </div>
                 <div class="time hour-10">
                   10:00 AM
@@ -138,7 +137,8 @@
               <div class="contain-time item3">
                 <div class="competition">
                   <span>Competição entre times</span>
-                  <img src="./assets/img/icons/CodeOutline.svg">
+                  <i class="ph-code"></i>
+
                 </div>
                 <div class="time hour-14">
                   14:00 PM
@@ -151,7 +151,8 @@
                   12:00 PM
                 </div>
                 <div class="lunch">
-                  <img src="./assets/img/icons/BellOutline.svg">
+                  <i class="ph-bell-ringing"></i>
+
                   <span>Almoço</span>
                 </div>
               </div>
@@ -162,7 +163,8 @@
               20:00 PM
             </div>
             <div class="closing">
-              <img src="./assets/img/icons/FlagOutline.svg">
+              <i class="ph-flag"></i>
+
               <span>Encerramento</span>
             </div>
           </div>
@@ -192,34 +194,34 @@
             <div class="address">
               <h3>Cidade:</h3>
               <div class="sub-address">
-                <img src="./assets/img/icons/icon-local.svg">
+                <i class="ph-map-pin"></i>
                 <p class="text-blue">Juazeiro do Norte, CE</p>
               </div>
               <h3>Endereço:</h3>
               <div class="sub-address">
-                <img src="./assets/img/icons/icon-build.svg">
+                <i class="ph-buildings"></i>
                 <p class="text-blue">R. Conceição, 1228 - São Miguel</p>
               </div>
               <h3>CEP:</h3>
               <div class="sub-address">
-                <img src="./assets/img/icons/icon-cep.svg">
+                <i class="ph-tray"></i>
                 <p class="text-blue">63010-465</p>
               </div>
             </div>
             <div class="contact">
               <h3>Telefone</h3>
               <div class="sub-address">
-                <img src="./assets/img/icons/icon-phone.svg">
+                <i class="ph-phone"></i>
                 <p class="text-blue">(88) 3512-3299</p>
               </div>
               <h3>Site UniFap</h3>
               <div class="sub-address">
-                <img src="./assets/img/icons/icon-site.svg">
+                <i class="ph-browser"></i>
                 <p><a href="https://unifapce.edu.br/" class="text-blue" target="_blank">Site FAP</a></p>
               </div>
               <h3>Email:</h3>
               <div class="sub-address">
-                <img src="./assets/img/icons/icon-mail.svg">
+                <i class="ph-envelope-simple"></i>
                 <p class="text-blue">fap@fapce.edu.br</p>
               </div>
             </div>
@@ -228,7 +230,7 @@
         <h2>Patrocinio</h2>
         <div class="sponsorship">
           <div class="grid-item">
-            <img src="./assets/img/organitation/garagem-logo.svg" alt="Logotipo do Garagem Lab">
+            <img src="./assets/img/organitation/logotipo-garagem.png" alt="Logotipo do Garagem Lab">
           </div>
         </div>
       </div>
@@ -248,11 +250,11 @@
       <h2>Organização</h2>
       <div class="organitation">
         <div class="footer-img">
-          <img src="./assets/img/organitation/logo-si.svg" alt="Logotipo do curso de sistemas de informação">
-          <img src="./assets//img//organitation/logo-fap.svg" alt="Logotipo da Unifap">
-          <img src="./assets/img/organitation/garagem-logo.svg" alt="Logotipo do Garagem Lab">
-          <img src="./assets/img/organitation/nexti-fap.svg" alt="Logotipo do Nexti">
-          <img src="./assets/img/organitation/logo-analise.svg" alt="Logotipo do curso de analise">
+          <img src="./assets/img/organitation/logotipo-si.png" alt="Logotipo do curso de sistemas de informação">
+          <img src="./assets//img//organitation/logotipo-unifap.png" alt="Logotipo da Unifap">
+          <img src="./assets/img/organitation/logotipo-garagem.png" alt="Logotipo do Garagem Lab">
+          <img src="./assets/img/organitation/logotipo-nexti.png" alt="Logotipo do Nexti">
+          <img src="./assets/img/organitation/logotipo-analise.png" alt="Logotipo do curso de analise">
         </div>
       </div>
     </footer>
