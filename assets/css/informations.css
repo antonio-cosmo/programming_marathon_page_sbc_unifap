@@ -170,7 +170,7 @@
 
 .pageInfor-divisor{
   height: 26rem;
-  min-width: 1.5rem;
+  min-width: 1rem;
   background-color: #131F2E;
   position: relative;
 }
@@ -185,7 +185,7 @@
   background-position: center;
   position:absolute;
   bottom: -60px;
-  left: -16px;
+  left: -20px;
 }
 
 .pageInfor-hours{
@@ -226,7 +226,7 @@
 
 .pageInfor-hour-col-1::after{
   content: "";
-  border-top:24px solid #131F2E ;
+  border-top:16px solid #131F2E ;
   border-left: 50px solid #131F2E;
  
 }
@@ -240,9 +240,8 @@
 
 .pageInfor-hour-col-2::before{
   content: "";
-  /* width: 50px; */
 
-  border-top:24px solid #131F2E ;
+  border-top:16px solid #131F2E ;
   border-left: 50px solid #131F2E;
  
 }
@@ -390,7 +389,8 @@
 }
 
 .organization img{
-  width: 9.3rem;
+  width: 100px;
+  height: 50px;
 }
 
 /* MENU  */
@@ -556,6 +556,9 @@ label span:nth-child(3){
 
 @media screen and (max-width: 576px){
 
+  #event, #address, #about{
+    min-height: 100vh;
+  }
   .cards{
     flex-direction: column;
   }
@@ -580,6 +583,13 @@ label span:nth-child(3){
     border-left: 40px solid #131F2E;
   }
 
+  .pageInfor-section-place{
+    margin-bottom: 0;
+  }
+  .pageInfor-map-place{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 
 }
 

@@ -437,7 +437,8 @@
 }
 
 .organitation img{
-  width: 9.3rem;
+  width:100px;
+  height: 50px;
 }
 
 
@@ -675,7 +676,7 @@
     display: none;
   }
 
-  .contain-place h2{
+  .contain-place h2, .section-footer h2{
     font-size: 1.5rem;
   }
   .timeline{
