@@ -525,9 +525,6 @@
     max-width: 24rem;
     
    }
-  .holder p{
-    max-width: 90%;
-  }
 
   .date-and-address{
     margin: 1rem 0;
@@ -630,7 +627,6 @@
   }
 
   .holder p{
-    text-align: center;
     max-width: 100%;
   }
   .steps{
