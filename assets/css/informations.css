@@ -135,6 +135,7 @@
   padding: 2rem;
   color: #fff;
   border-radius: 1rem;
+  max-width: 50rem;
 }
 
 .pageInfor-code-evironment h2{
