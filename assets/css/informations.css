@@ -557,7 +557,7 @@ label span:nth-child(3){
 
 @media screen and (max-width: 576px){
 
-  #event, #address, #about{
+  #address, #about{
     min-height: 100vh;
   }
   .cards{
