@@ -5,12 +5,6 @@
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-
-  font-size: 1rem;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -20,10 +14,11 @@ body {
   font-size: 1rem;
 }
 
-
 a {
   text-decoration: none;
+  font-size: 1rem;
 }
+
 ul {
   list-style: none;
 }

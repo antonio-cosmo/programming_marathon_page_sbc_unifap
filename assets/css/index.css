@@ -436,8 +436,8 @@
   flex-wrap: wrap;
 }
 
-.organitation img{
-  width:100px;
+.organization img{
+  width: 100px;
   height: 50px;
 }
 
@@ -451,7 +451,7 @@
 
   .section-header{
     min-height: calc(60vh + 80px);
-    background-image: url("/assets/img/background-resopnsive-home.svg");
+    background-image: url("/assets/img/background-responsive-home.svg");
     background-size: contain, cover;
     background-repeat: no-repeat, no-repeat;
     background-position: bottom right, bottom right;
